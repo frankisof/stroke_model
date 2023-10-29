@@ -12,7 +12,7 @@ imputer = SimpleImputer(strategy="mean")  # Puedes usar "mean" u otra estrategia
 
 # Aplicar la imputación a tus datos
 
-df = pd.read_csv(pathlib.Path('/home/francisco/Stroke_model/deploy-ml/model/healthcare-dataset-stroke-data.csv'))
+df = pd.read_csv(pathlib.Path('data/full_data.csv'))
 y = df.pop('stroke')
 X = df
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2)
